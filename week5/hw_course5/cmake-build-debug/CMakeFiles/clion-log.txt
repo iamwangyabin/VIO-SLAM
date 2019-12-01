@@ -1,0 +1,10 @@
+/home/wang/software/clion-2019.2.5/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wang/workspace/VIO-SLAM/week5/hw_course5
+OPENMP FOUND
+-- No preference for use of exported Eigen CMake configuration set, and no hints for include directory provided. Defaulting to preferring an installed/exported Eigen CMake configuration if available.
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- No preference for use of exported glog CMake configuration set, and no hints for include/library directories provided. Defaulting to preferring an installed/exported glog CMake configuration if available.
+-- Failed to find installed glog CMake configuration, searching for glog build directories exported with CMake.
+-- Failed to find an installed/exported CMake configuration for glog, will perform search for installed glog components.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug

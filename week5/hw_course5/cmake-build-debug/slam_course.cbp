@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="slam_course"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\;CMake Files\..\..\LIBRARY\;CMake Files\..\..\LIBRARY\opencv-3.2.0\;CMake Files\..\..\LIBRARY\opencv-3.2.0\build\;CMake Files\frontend\;CMake Files\backend\;CMake Files\utils\;CMake Files\app\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slam_course_frontend">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/libslam_course_frontend.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 slam_course_frontend"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slam_course_frontend/fast">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/libslam_course_frontend.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 slam_course_frontend/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/frontend/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slam_course_backend">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/libslam_course_backend.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 slam_course_backend"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="slam_course_backend/fast">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/libslam_course_backend.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 slam_course_backend/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/backend/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMonoBA">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/testMonoBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 testMonoBA"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testMonoBA/fast">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/testMonoBA" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 testMonoBA/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testCurveFitting">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/testCurveFitting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 testCurveFitting"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testCurveFitting/fast">
+				<Option output="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/testCurveFitting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUSE_OPENMP"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/build"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/include/opencv"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/core/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/flann/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgproc/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/ml/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/photo/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/video/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/viz/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/imgcodecs/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/shape/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videoio/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/highgui/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/objdetect/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/superres/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/features2d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/calib3d/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/stitching/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/LIBRARY/opencv-3.2.0/modules/videostab/include"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5/thirdparty/Sophus"/>
+					<Add directory="/home/wang/workspace/VIO-SLAM/week5/hw_course5"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 testCurveFitting/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake-build-debug/app/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/app/CurveFitting.cpp">
+			<Option target="testCurveFitting"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/app/TestMonoBA.cpp">
+			<Option target="testMonoBA"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_imu.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_imu.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_prior.cpp">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_prior.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_reprojection.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/edge_reprojection.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/imu_integration.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/imu_integration.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/loss_function.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/loss_function.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/problem.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/problem.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/vertex.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/vertex.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/vertex_pose.cc">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/vertex_pose.h">
+			<Option target="slam_course_backend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/frontend/frame.cc">
+			<Option target="slam_course_frontend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/frontend/frame.h">
+			<Option target="slam_course_frontend"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake/FindEigen.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/cmake/FindGlog.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/../../../../../../usr/lib/cmake/eigen3/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\cmake\eigen3\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/../../LIBRARY/opencv-3.2.0/build/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\LIBRARY\opencv-3.2.0\build\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/../../LIBRARY/opencv-3.2.0/build/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\LIBRARY\opencv-3.2.0\build\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/../../LIBRARY/opencv-3.2.0/build/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\LIBRARY\opencv-3.2.0\build\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/frontend/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\frontend\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/backend/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\backend\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/utils/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\utils\"/>
+		</Unit>
+		<Unit filename="/home/wang/workspace/VIO-SLAM/week5/hw_course5/app/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\app\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

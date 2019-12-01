@@ -1,0 +1,2 @@
+/usr/bin/ar qc libslam_course_frontend.a  CMakeFiles/slam_course_frontend.dir/frame.cc.o
+/usr/bin/ranlib libslam_course_frontend.a
